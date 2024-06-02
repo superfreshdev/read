@@ -1,0 +1,266 @@
+html, body {
+
+    /* background-color: rgb(155, 155, 137); */
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5rem;
+
+    font-size: 1rem;
+
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+#body-container {
+
+    padding: .8em;
+}
+
+/* body {
+
+    display: grid;
+    grid: auto auto / 1fr;
+
+    align-content: flex-start;
+    
+
+} */
+
+/* ------------------------------------------------ */
+/* Defaults
+/* ------------------------------------------------ */
+
+.txt-b { font-weight: bold;}
+
+/* ------------------------------------------------ */
+/* Header 
+/* ------------------------------------------------ */
+
+header {
+
+    height: 4.3em;
+    padding: 0 1em;
+   
+    background-color: rgb(39, 39, 39);
+    border-radius: .4em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+#content-block-header {
+
+    display: flex;
+    align-items: center;
+    column-gap: .8em;
+}
+
+#content-title-block-header {
+
+    line-height: 1.2em;
+}
+
+#content-title-block-header > div:nth-of-type(1) {
+
+    color:rgb(215, 215, 215);
+    font-weight: bold;
+}
+
+#content-title-block-header > div:nth-of-type(2) {
+   
+    font-size: .7em;
+    font-style: italic;
+    color:#d9bf98;
+    
+    
+}
+
+#img-title-header {
+
+    height: 1.8em;
+    border-radius: .4em;
+
+}
+
+#img-logo-header {
+
+    height: 2.8em;
+    border-radius: .4em;
+
+}
+
+/* ------------------------------------------------ */
+/* Main
+/* ------------------------------------------------ */
+
+main {
+
+
+    padding: 2em 0em;
+
+    display: grid;
+    align-items: flex-start;
+    row-gap: 2em;
+
+}
+
+
+/* ------------------------------------------------ */
+/* Book Layout
+/* ------------------------------------------------ */
+
+.book-layout { 
+
+    padding: .6em;
+
+    display: grid;
+    row-gap: .6em;
+
+    background-color: white;
+    border-radius: .4em;
+
+}
+
+.img-book { 
+
+    height: 6em;
+    min-width: 4em;
+    border-radius: .3em;
+}
+
+.title-content-book {
+
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+}
+
+
+.title-book {
+
+   line-height: 1.2em;
+
+}
+
+.title-book > div:nth-of-type(1) {
+
+    font-weight: bold;
+
+}
+
+.title-book > div:nth-of-type(2) {
+    
+}
+
+/* ----------------------------------------------- */
+/* Audio Layout 
+/* ----------------------------------------------- */
+
+.audio-book-content { 
+
+    display: grid;
+    row-gap: .6em;
+}
+
+.item-audio-layout {
+
+    display: grid;
+    row-gap: .3em;
+    line-height: 1.3em;
+}
+
+.item-text-audio { 
+
+    display: flex;
+    column-gap: .4em;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item-text-audio > img {
+
+    height: 1.3em;
+}
+
+
+.layout-audio-seperator {
+
+    display: flex;
+    justify-content: center;
+}
+
+.audio-seperator {
+
+    width: 100%;
+    height: 1px;
+
+    margin-top: .3em;
+    margin-bottom: .3em;
+
+    border-radius: .4em;
+    background-color: rgb(212, 212, 212);
+   
+}
+
+.audio-content-layout {
+
+    display: grid;
+    row-gap: .3em;
+}
+
+audio {
+
+    /* background-color: red; */
+    width: 100%;
+}
+
+/* ------------------------------------------------ */
+/* Responsive Desgin
+/* ------------------------------------------------ */
+
+@media (min-width: 520px) {
+
+    main {
+
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+    }
+
+    .book-layout {
+
+        width: 14em;
+    
+    }
+
+}
+
+@media (min-width: 760px) {
+
+    .book-layout {
+
+        width: 18em;
+    
+    }
+
+}
+
+@media (min-width: 1023px) {
+
+    .book-layout {
+
+        width: 22em;
+    
+    }
+
+}

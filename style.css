@@ -158,13 +158,22 @@ main {
     column-gap: 1em;
 }
 
-.youtube-container {
+/* --------------------------------------------------------- */
+/* Internet Link Container 
+/* - Youtube Link 
+/* - Webseite Link
+/* --------------------------------------------------------- */
+
+/* .youtube-container */
+.internet-link-container {
 
     display: flex;
     justify-content: flex-end;
+
 }
 
-.youtube-link {
+/* .youtube-link */
+.internet-link {
 
     height: 1.8em;
     padding: 0em .4em;
@@ -177,11 +186,18 @@ main {
     text-decoration: none;
     color:rgb(221, 221, 221);
 
-   
-    background-color: rgb(213, 120, 120);
     border-radius: .3em;
 
     transition: all .4s ease-in;
+
+}
+
+
+/* ------------------------------------------ */
+/* Youtube Link 
+/* ------------------------------------------ */
+.youtube-link {
+    background-color: rgb(213, 120, 120);
 }
 
 .youtube-link:hover {
@@ -189,8 +205,24 @@ main {
 }
 
 .youtube-link > img {
-
     height: 1.2em;
+}
+
+
+/* ------------------------------------------ */
+/* Website Link 
+/* ------------------------------------------ */
+.website-link {
+    background-color: #74c45c;
+    color:rgb(70, 70, 70);
+}
+
+.website-link:hover {
+    background-color: grey;
+}
+
+.website-link > img {
+    height: .8em;
 }
 
 
@@ -210,6 +242,121 @@ main {
 .title-book > div:nth-of-type(2) {
     
 }
+
+/* ----------------------------------------------- */
+/* Chapter Content Layout
+/* ----------------------------------------------- */
+
+.chapter-content-layout {
+
+    display: grid;
+    row-gap: 1.3em;
+
+}
+
+
+.chapter-content-container {
+
+    display: grid;
+    
+}
+
+.chapter-content-container > .header {
+
+    min-height: 2em;
+    padding: .4em;
+    display: flex;
+    align-items: center;
+    column-gap: .4em;
+    line-height: 1.3em;
+
+    border-radius: .3em .3em 0em 0em;
+
+    font-weight: bold;
+    background-color: rgb(168, 168, 168);
+
+}
+
+
+
+.chapter-content-container > .content {
+
+    padding: .8em .4em;
+    display: grid;
+    row-gap: .8em;
+
+    border-radius: 0em 0em .3em .3em;
+
+    background-color: rgb(225, 225, 225);
+
+  
+    
+}
+
+.chapter-content-container > .content > .chapter {
+
+   display: grid;
+   row-gap: .8em;
+ 
+}
+
+.magazine-chapter-header {
+
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+
+    padding: .8em 0em;
+
+    display: flex;
+    align-items: flex-start;
+    column-gap: .6em;
+}
+
+.magazine-chapter-header .main-chapter-title {
+
+    color:rgb(89, 89, 89);
+    font-weight: bold;
+
+}
+
+.magazine-chapter-header .sub-chapter-title {
+    
+    font-size: .9em;
+    color:rgb(89, 89, 89);
+    line-height: 1.3em;
+
+}
+
+
+.img-magazine { 
+
+    border-radius: .3em;
+    height: 4em;
+}
+
+.sub-chapter-container {
+
+
+    display: grid;
+    row-gap: .8em;
+}
+
+.sub-chapter-container > div {
+
+    display: grid;
+    row-gap: .4em;
+
+}
+
+.txt-non-focus {
+
+    font-size: .9em;
+    color:rgb(89, 89, 89);
+    line-height: 1.3em;
+
+
+}
+
 
 /* ----------------------------------------------- */
 /* Audio Layout 

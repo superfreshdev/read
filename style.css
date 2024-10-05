@@ -358,6 +358,21 @@ main {
 }
 
 
+.music-lyric-box {
+
+    padding: .8em;
+    margin: .8em;
+    border-radius: .3em;
+
+    display: flex;
+    align-items: center;
+
+    font-weight: bold;
+    font-size: 20px;
+
+    background-color: rgb(163, 163, 163);
+}
+
 /* ----------------------------------------------- */
 /* Audio Layout 
 /* ----------------------------------------------- */
